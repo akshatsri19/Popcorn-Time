@@ -1,0 +1,100 @@
+h1{
+    font-family: 'Luckiest Guy', cursive;
+}
+
+body{
+    font-family: 'Mandali', sans-serif;
+    margin: 0%;
+    background-image:  linear-gradient(to bottom, #BBD2C5, #536976, #292E49);
+    
+
+}
+
+/* ----------------------------------------------------Nav BAR-------------------------------------------------------------- */
+
+nav>ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #292E49;
+    height: 120px;
+    list-style: none;
+    margin: 0%;
+}
+
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav li{
+    padding-top: 3.5%;
+}
+
+nav img{
+    height: 120px;
+    
+}
+
+
+h2{
+    text-align: center;
+}
+
+/* section{
+    background-color: #ffda79;
+} */
+
+section>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section>div>article{
+    width: 20%;
+    padding: 1%;
+}
+
+section> div > article > img {
+    width:100%;
+}
+
+#currently-playing{
+    background-color: #227093;
+    height: 50px;
+    width: 100%;
+}
+
+.comming-soon{
+    background-color: #84817a;
+    height: 50px;
+    width: 100%;
+}
+
+#our-location{
+    display: flex;
+}
+
+#map{
+    margin-bottom: 2%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    background-color:  #BBD2C5;
+  
+}
+
+footer img{
+    height: 30px;
+    
+}
+
+.center{
+    text-align: center;
+    color: aliceblue;
+}
+
