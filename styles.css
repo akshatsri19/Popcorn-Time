@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
 h1{
     font-family: 'Luckiest Guy', cursive;
 }
@@ -5,12 +10,12 @@ h1{
 body{
     font-family: 'Mandali', sans-serif;
     margin: 0%;
-    background-image:  linear-gradient(to bottom, #BBD2C5, #536976, #292E49);
-    
+    /* background-image:  linear-gradient(to bottom, #BBD2C5, #536976, #292E49); */
+
 
 }
 
-/* ----------------------------------------------------Nav BAR-------------------------------------------------------------- */
+/* ----------------------------------------------------Nav BAR--Akshat------------------------------------------------------------ */
 
 nav>ul{
     display: flex;
@@ -34,7 +39,7 @@ nav li{
 
 nav img{
     height: 120px;
-    
+
 }
 
 
@@ -42,21 +47,58 @@ h2{
     text-align: center;
 }
 
+/* -----------------------------Main-Naitik------------------------------------------------------------------------------------ */
+
+#now-playing {
+    width: 99vw;
+    height: 100vh;
+    background-image: url('./assets/movie.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#now-playing > div {
+    /* width: 20%;
+    height: 20%; */
+    border: 1px solid white;
+    text-align: center;
+    /* background-color: grey; */
+    margin-right: 5rem;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#now-playing-title {
+    padding: 2.5rem 0 1rem 0;
+}
+
+#now-playing > div > button {
+    margin-top: 2rem;
+    width: 50%;
+    height: 20%;
+    font-size: 25px;
+}
+/* --------------------------------------------------Section Akshat-------------------------------------------------------------------------------------- */
+
 /* section{
     background-color: #ffda79;
 } */
 
-section>div{
+#all-movies>div{
     display: flex;
     justify-content: space-evenly;
+
 }
 
-section>div>article{
+#all-movies>div>article{
     width: 20%;
     padding: 1%;
 }
 
-section> div > article > img {
+#all-movies> div > article > img {
     width:100%;
 }
 
@@ -74,6 +116,9 @@ section> div > article > img {
 
 #our-location{
     display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+    color: aliceblue;
 }
 
 #map{
@@ -85,13 +130,15 @@ footer{
     flex-direction: column;
     height: 120px;
     background-color:  #BBD2C5;
-  
+
 }
 
 footer img{
     height: 30px;
-    
+
 }
+
+/* -------------------------------------------------------------------------moviesDetails Akshat------------------------------------- */
 
 .center{
     text-align: center;
@@ -100,4 +147,206 @@ footer img{
 
 #trailer-description{
     display: flex;
+    justify-content: space-between;
+    padding: 2%;
 }
+
+#trailer-description>div{
+    padding: 1%;
+}
+
+#trailer-description p{
+    color: antiquewhite;
+    text-align: center;
+}
+
+table{
+    padding-left: 40%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 1200px;
+    height: 200px;
+    font-size: 20px;
+}
+
+.btn{
+    font-size: 20px;
+}
+
+/* --------------------------------------------------------------Purchase Ticket- Naitik----------------------------------------------------- */
+/* Purchase Tickets Section  */
+
+#buy-tickets {
+    height: 80vh;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    /* background-color: aqua; comment */
+}
+
+#payment {
+    text-align: center;
+    /* background-color: bisque; comment */
+    background-color: #eeee;
+    height: 80%;
+    width: 35%;
+    border: 1px solid black;
+    margin-top: 5rem;
+}
+
+#ticket-heading {
+    /* border: 1px solid red; */
+    font-size: 30px;
+    margin: 3rem 0 1rem 0;
+    color: black;
+}
+
+#payment-heading {
+    margin: 3rem 0 1rem 0;
+    /* border: 1px solid red; comment */
+    font-size: 30px;
+    color: black;
+}
+  
+#order-summary {
+    background-color: #eeee;
+    width: 20%;
+    height: 80%;
+    text-align: center;
+    line-height: 27px;
+    font-size: 20px;
+    border: 1px solid black;
+    margin-top: 5rem;
+}
+
+#order-summary > img {
+    width: 100%;
+    height: auto;
+    margin: 0rem 0 1rem 0;
+}
+
+#order-summary-heading {
+    font-weight: 700;
+    margin: 2rem 0 1rem 0;
+}
+
+#show-detail-heading {
+    font-weight: 700;
+    margin: 2rem 0 1rem 0;
+}
+
+input[type='number'] {
+    width: 10%;
+    height: 55px;
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.tickets {
+    display: inline-block;
+     /* background-color: red; commment */
+    border: 1px solid black;
+    padding: 1rem;
+    width: 500px;
+    text-align: left;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.payment-mode {
+    display: inline-block;
+    /* background-color: red; Comment */
+    border: 1px solid black;
+    padding: 1rem;
+    width: 600px;
+    font-size: 18px;
+    text-align: center;
+    /* margin-right: 10px comment;
+    margin-bottom: 1rem; comment */
+    margin: 1rem 10px 1rem 0;
+    color: black;
+}
+  
+input[type='radio'] {
+    display: inline;
+    width: 10%;
+    height: 20px;
+}
+
+.fa-credit-card {
+    font-size: 35px;
+    color: black;
+}
+
+.fa-paypal {
+    font-size: 35px;
+    color: black;
+}
+
+#payment > form > button {
+    margin-top: 100px;
+    width: 260px;
+    height: 40px;
+}
+
+.dynamic-html-paypal {
+    padding: 1rem;
+    width: 600px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 20px;
+}
+
+.dynamic-html-credit {
+    padding: 1rem;
+    width: 600px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 20px;
+}
+
+#cc-number {
+    padding: 1rem;
+    width: 500px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 20px;
+}
+
+#cvv {
+    width: 97px;
+    height: 55px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#validate-message,
+#paypal-error-message,
+#credit-error-message {
+    color: red;
+    font: 26px;
+}
+
+
+#order-summary-total {
+    display: flex;
+    justify-content: space-around;
+}
+
+  /* header {
+    height: 10vh;
+    background-color: palegoldenrod;
+    border: 1px solid black;
+  }
+
+  footer {
+    height: 10vh;
+    background-color: palegoldenrod;
+    border: 1px solid black;
+  }

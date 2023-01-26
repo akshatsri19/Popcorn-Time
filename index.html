@@ -1,90 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mandali&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
 
     <title>PopcornTime</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-    crossorigin=""></script>
-    
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="movieDetails.html">Now Playing</a></li>
-                <img src="assets/Popcorn_Time_logo.png" alt="">
-                <li><a href="purchaseTicket.html">Buy Tickets</a></li>
-                <li><a href="#our-location">Location</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movieDetails.html">Now Playing</a></li>
+          <img src="assets/Popcorn_Time_logo.png" alt="" />
+          <li><a href="purchaseTicket.html">Buy Tickets</a></li>
+          <li><a href="#our-location">Location</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-        <!-- Paste code here -->
-    </main>
-
-    <section>
-        <h2>All Movies</h2>
+    <main id="now-playing">
         <div>
-            <article>
-                <img src="assets/GangsOfWasseypur.jpg" alt="">
-                <button id="currently-playing">View Details</button>
-            </article>
-            <article>
-                <img src="assets/TheNotebook.jpg" alt="">
-                <button class="comming-soon">Comming Soon</button>
-            </article>
-            <article>
-                <img src="assets/PerksOfBeingAWallflower.jpg" alt="">
-                <button class="comming-soon">Comming soon</button>
-            </article>
+          <p id="now-playing-title">Now Playing AVENGERS</p>
+          <p>Feb 01-25 </p>
+          <button>View Details</button>
         </div>
-    </Section>
+      </main>
 
-    <section >
-        <h2>Our Location</h2>
-        <div id="our-location">
-            <div>
-                <p>Theatere Name</p>
-                <p>Street address</p>
-                <p>Hours of operation</p>
-                <p>Phone number</p>
-                <p>Email Address</p>
-            </div>
-        <div id="map" style="width:500px; height: 500px"></div>
-    </div>
+    <section id="all-movies">
+      <h2>All Movies</h2>
+      <div>
+        <article>
+          <img src="assets/poster.jpg" alt="" />
+          <a href="./movieDetails.html"
+            ><button id="currently-playing">View Details</button></a
+          >
+        </article>
+        <article>
+          <img src="assets/TheNotebook.jpg" alt="" />
+          <button class="comming-soon">Comming Soon</button>
+        </article>
+        <article>
+          <img src="assets/PerksOfBeingAWallflower.jpg" alt="" />
+          <button class="comming-soon">Comming soon</button>
+        </article>
+      </div>
     </section>
 
-
-    
+    <section>
+      <h2>Our Location</h2>
+      <div id="our-location">
+        <div>
+          <p>Cineplex Cinemas Yonge-Eglinton and VIP</p>
+          <p>2300 Yonge St, Toronto, ON M4P 1E4</p>
+          <p>Hours of operation - 8am to 11pm</p>
+          <p>Phone number - +14165441236</p>
+          <p>Email Address - bookings@cineplex.ca</p>
+        </div>
+        <div id="map" style="width: 500px; height: 500px"></div>
+      </div>
+    </section>
 
     <footer>
-        <P class="center">&copy; 2023 Toronto Canada, Inc. All rights resered</P>
-        <div class="center">
-        <a href="https://www.facebook.com/"><img src="assets/facebook_icon.png" alt=""></a>
-        <a href="https://www.instagram.com/"><img src="assets/Instagram_icon.webp" alt=""></a>
-        <a href="https://www.tinder.com"><img src="assets/tinder-icon.webp" alt=""></a>
-        </div>
+      <p class="center">&copy; 2023 Toronto Canada, Inc. All rights resered</p>
+      <div class="center">
+        <a href="https://www.facebook.com/"
+          ><img src="assets/facebook_icon.png" alt=""
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="assets/Instagram_icon.webp" alt=""
+        /></a>
+        <a href="https://www.tinder.com"
+          ><img src="assets/tinder-icon.webp" alt=""
+        /></a>
+      </div>
     </footer>
+  </body>
+  <script
+    src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""
+  ></script>
+  <script>
+    // Initialize the map
+    const map = L.map('map');
 
+    // Get the tile layer from OpenStreetMaps
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      // Specify the maximum zoom of the map
+      maxZoom: 19,
 
-</body>
-<script src="app.js"></script>
+      // Set the attribution for OpenStreetMaps
+      attribution:
+        '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
 
+    // Set the view of the map
+    // with the latitude, longitude and the zoom value
+    map.setView([43.70750599699719, -79.3987051429922], 16);
+
+    // Set the map view to the user's location
+    // Uncomment below to set map according to user location
+    // map.locate({setView: true, maxZoom: 16});
+
+    // Show a market at the position of the Eiffel Tower
+    let cineplex = L.marker([43.70750599699719, -79.3987051429922]).addTo(map);
+
+    // Bind popup to the marker with a popup
+    cineplex.bindPopup('Cineplex - Yonge and Eglinton').openPopup();
+  </script>
+  <script src="app.js"></script>
 </html>
