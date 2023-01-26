@@ -5,8 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movieDetails.html">Now Playing</a></li>
+                <img src="assets/Popcorn_Time_logo.png" alt="">
+                <li><a href="purchaseTicket.html">Buy Tickets</a></li>
+                <li><a href="index.html">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="trailer-description">
+        <div>
+        <!-- <video src="https://www.youtube.com/watch?v=9ZpPQdrHfl8"></video> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9ZpPQdrHfl8" frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <p>321 minutes, 22 June 2012 (Part 1), 8.2/10</p>
+        </div>
+        <div>
+            <h2>Gangs of Wasseypur</h2>
+            <p>Gangs of Wasseypur is a 2012 Indian Hindi-language two-part crime film produced and directed by 
+                Anurag Kashyap,[3] and written by Kashyap and Zeishan Quadri. Centered on the coal mafia (Mafia Raj) 
+                of Dhanbad, and the underlying power struggles, politics and vengeance between three crime families, the film has 
+                an ensemble cast, with Manoj Bajpai, Nawazuddin Siddiqui, Pankaj Tripathi, Richa Chadda, Huma Qureshi and 
+                Tigmanshu Dhulia in the major roles. Its story spans 68 years from 1941 to 2009.</p>
+        </div>
+    </main>
+
+    <section>
+        <h2>ShowTime Section</h2>
+        <table>
+            <tr>
+                <td>30-06-2021</td>
+                <td><button class="btn" data-date="30-06-2021">11:00 AM</button></td>
+                <td><button>Sold out</button></td>
+                <td><button class="btn" data-date="30-06-2021">10:00 PM</button></td>
+            </tr>
+            <tr>
+                <td>01-07-2021</td>
+                <td><button class="btn" data-date="01-07-2021">11:00 AM</button></td>
+            </tr>
+            <tr>
+                <td>02-07-2021</td>
+                <td><button >Sold Out</button></td>
+                <td><button class="btn" data-date="02-07-2021">04:00 PM</button></td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <P class="center">&copy; 2023 Toronto Canada, Inc. All rights resered</P>
+        <div class="center">
+            <a href="https://www.facebook.com/"><img src="assets/facebook_icon.png" alt=""></a>
+            <a href="https://www.instagram.com/"><img src="assets/Instagram_icon.webp" alt=""></a>
+            <a href="https://tinder.com/"><img src="assets/tinder-icon.webp" alt=""></a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
 </body>
+
 </html>

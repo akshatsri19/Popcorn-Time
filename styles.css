@@ -98,3 +98,6 @@ footer img{
     color: aliceblue;
 }
 
+#trailer-description{
+    display: flex;
+}
